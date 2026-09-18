@@ -2,57 +2,22 @@
 
 An R-based genomics and data-wrangling pipeline designed to analyze population structures, genetic diversity, and epidemiologically relevant traits (such as antimicrobial resistance genes and virulence profiles) in *Klebsiella* species. 
 
-### 🧬 Biological Context
+### Biological Context
 
 *Klebsiella* species, particularly *Klebsiella pneumoniae*, are high-priority opportunistic pathogens frequently associated with multidrug resistance (MDR) in clinical environments. This project focuses on processing large genomic datasets to track pathogen diversity, identify hypervirulent or drug-resistant clones, and reconstruct genomic epidemiology patterns from population-scale surveillance data. 
 
-### 📊 Core Features
+### Core Features
 
 * **Population Genomics Wrangling:** Cleans, filters, and parses output files from major bacterial genomics typing tools (e.g., Kleborate, MLST, or assemblies).
 * **Phylogenetic & Lineage Analysis:** Scripts to structure diversity metrics, core vs. accessory genome trends, and sequence type (ST) distributions.
 * **Virulence & AMR Profiling:** Automated generation of profiles cross-referencing specific *Klebsiella* surface antigens (K and O loci) with resistance phenotypes.
 * **Publication-Ready Graphics:** Custom ggplot2 scripts optimized to build clean, intuitive figures showing population clustering and genomic traits.
 
-### 🛠️ Tech Stack & Dependencies
+###  Tech Stack & Dependencies
 
 * **Language:** R (v4.0+)
 * **Primary Libraries:** tidyverse (dplyr, ggplot2, tidyr, stringr), ggtree (if visualizing phylogenetic layouts), data.table.
 
-### 📂 Repository Structure
-
-text
-
-├── data/
-│   └── mock_kleborate_output.txt  # Anonymized dummy dataset for testing
-├── src/
-│   ├── clean_genomic_data.R       # Core parsing and metadata integration script
-│   └── plot_st_distribution.R     # Script generating population diversity figures
-├── output/                        # Directory for processed tables and plots
-├── README.md
-└── .gitignore
-
-Use code with caution.
-
-### 🚀 Getting Started
-
-### Installation
-
-Clone this repository to your local directory: 
-
-bash
-
-git clone https://github.com/sulayman-sowe/Klebsiella-Diversity-Project.git
-cd Klebsiella-Diversity-Project
-
-Use code with caution.
-
-### Execution Example
-
-You can execute the primary diversity analysis script straight from your terminal: 
-
-bash
-
-Rscript src/clean_genomic_data.R --input data/mock_kleborate_output.txt --output output/processed_diversity.csv
 
 Use code with caution.
 
